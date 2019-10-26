@@ -10,12 +10,15 @@ var text8;
 
 $(".saveBtn-0").on("click", function (event) {
     event.preventDefault();
-    text0 = $(".hour-0").val();;
+    text0 = $(".hour-0").val();
     localStorage.setItem("text0", text0);
 });
 
 function pullSavedText() {
-
+    if (localStorage.text0){
+        text0 = localStorage.getItem("text0");
+        $(".hour-0").val(text0);
+    }
 };
 
 pullSavedText()
