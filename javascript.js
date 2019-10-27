@@ -26,10 +26,98 @@ $(".saveBtn-0").on("click", function (event) {
     localStorage.setItem("text0", text0);
 });
 
+$(".saveBtn-1").on("click", function (event) {
+    event.preventDefault();
+    text1 = hour1Element.val();
+    localStorage.setItem("text1", text1);
+});
+
+$(".saveBtn-2").on("click", function (event) {
+    event.preventDefault();
+    text2 = hour2Element.val();
+    localStorage.setItem("text2", text2);
+});
+
+$(".saveBtn-3").on("click", function (event) {
+    event.preventDefault();
+    text3 = hour3Element.val();
+    localStorage.setItem("text3", text3);
+});
+
+$(".saveBtn-4").on("click", function (event) {
+    event.preventDefault();
+    text4 = hour4Element.val();
+    localStorage.setItem("text4", text4);
+});
+
+$(".saveBtn-5").on("click", function (event) {
+    event.preventDefault();
+    text5 = hour5Element.val();
+    localStorage.setItem("text5", text5);
+});
+
+$(".saveBtn-6").on("click", function (event) {
+    event.preventDefault();
+    text6 = hour6Element.val();
+    localStorage.setItem("text6", text6);
+});
+
+$(".saveBtn-7").on("click", function (event) {
+    event.preventDefault();
+    text7 = hour7Element.val();
+    localStorage.setItem("text7", text7);
+});
+
+$(".saveBtn-8").on("click", function (event) {
+    event.preventDefault();
+    text8 = hour8Element.val();
+    localStorage.setItem("text8", text8);
+});
+
 function pullSavedText() {
     if (localStorage.text0) {
         text0 = localStorage.getItem("text0");
         $(".hour-0").val(text0);
+    };
+
+    if (localStorage.text1) {
+        text1 = localStorage.getItem("text1");
+        $(".hour-1").val(text1);
+    };
+
+    if (localStorage.text2) {
+        text2 = localStorage.getItem("text2");
+        $(".hour-2").val(text2);
+    };
+
+    if (localStorage.text3) {
+        text3 = localStorage.getItem("text3");
+        $(".hour-3").val(text3);
+    };
+
+    if (localStorage.text4) {
+        text4 = localStorage.getItem("text4");
+        $(".hour-4").val(text4);
+    };
+
+    if (localStorage.text5) {
+        text5 = localStorage.getItem("text5");
+        $(".hour-5").val(text5);
+    };
+
+    if (localStorage.text6) {
+        text6 = localStorage.getItem("text6");
+        $(".hour-6").val(text6);
+    };
+
+    if (localStorage.text7) {
+        text7 = localStorage.getItem("text7");
+        $(".hour-7").val(text7);
+    };
+
+    if (localStorage.text8) {
+        text8 = localStorage.getItem("text8");
+        $(".hour-8").val(text8);
     };
 };
 
