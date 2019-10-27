@@ -11,6 +11,14 @@ var time;
 var date;
 var dateElement = $(".date-element");
 var hour0Element = $(".hour-0");
+var hour1Element = $(".hour-1");
+var hour2Element = $(".hour-2");
+var hour3Element = $(".hour-3");
+var hour4Element = $(".hour-4");
+var hour5Element = $(".hour-5");
+var hour6Element = $(".hour-6");
+var hour7Element = $(".hour-7");
+var hour8Element = $(".hour-8");
 
 $(".saveBtn-0").on("click", function (event) {
     event.preventDefault();
@@ -30,12 +38,6 @@ function changeColor() {
     console.log(time);
     if (time == "12 hours ago"){
         console.log("working");
-    }
+        itIs12PM();
+    };
 };
-
-date = moment().format("LL");
-dateElement.text(date);
-
-
-pullSavedText();
-changeColor();
